@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Planetarium | Quiz</title>
+
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link the JavaScript file -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Website header -->
+    <header class="site-header">
+        <!-- Main navigation on the left -->
+        <nav class="left-nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mars.html">Mars</a></li>
+                <li><a href="quiz.html" aria-current="page">Quiz</a></li>
+            </ul>
+        </nav>
+
+        <!-- Logo and site title centered in the header -->
+        <div class="brand centered-brand">
+            <img src="media/logo.png" alt="Big Planetarium logo" class="logo">
+            <div>
+                <h1>Big Planetarium</h1>
+            </div>
+        </div>
+
+       
+        <div class="header-spacer" aria-hidden="true"></div>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content">
+       
+        <section class="card">
+            <h2>Space Quiz</h2>
+            <p>
+                This test will analyse how much the user has learned through the website.
+                This test will consist of three multiple-choice questions. Once the test is 
+                submitted, JavaScript analyses the answers and gives the final score.
+            </p>
+        </section>
+
+        <!-- Quiz form -->
+        <section class="card">
+            <form id="space-quiz">
+                <!-- Question 1 -->
+                <fieldset>
+                    <legend>1. Which galaxy do we live in?</legend>
+                    <label><input type="radio" name="q1" value="correct"> The Milky Way</label><br>
+                    <label><input type="radio" name="q1" value="wrong"> Andromeda</label><br>
+                    <label><input type="radio" name="q1" value="wrong"> Whirlpool Galaxy</label>
+                </fieldset>
+
+                <!-- Question 2 -->
+                <fieldset>
+                    <legend>2. Why is Mars called the Red Planet?</legend>
+                    <label><input type="radio" name="q2" value="wrong"> Because it is full of fire</label><br>
+                    <label><input type="radio" name="q2" value="correct"> Because iron oxide makes the surface look red</label><br>
+                    <label><input type="radio" name="q2" value="wrong"> Because it glows red at night</label>
+                </fieldset>
+
+                <!-- Question 3 -->
+                <fieldset>
+                    <legend>3. Which feature improves accessibility on this website?</legend>
+                    <label><input type="radio" name="q3" value="wrong"> Hidden text</label><br>
+                    <label><input type="radio" name="q3" value="correct"> Skip link and text controls</label><br>
+                    <label><input type="radio" name="q3" value="wrong"> Auto-playing music</label>
+                </fieldset>
+
+                <!-- Quiz buttons -->
+                <div class="button-row">
+                    <button type="submit">Submit Quiz</button>
+                    <button type="button" id="quiz-reset">Reset Quiz</button>
+                </div>
+            </form>
+
+            <!-- Quiz result -->
+            <p id="quiz-feedback">Your score will appear here after you submit the quiz.</p>
+        </section>
+
+        <!-- Extra text -->
+        <section class="card">
+            <h2>Why Use a Quiz?</h2>
+            <p>
+                A quiz can be regarded as a useful interactive element that allows
+                users to evaluate how well they understand the content covered by the website.
+                In addition, a quiz adds value to user interaction and illustrates 
+                the use of JavaScript when handling forms and providing feedback.
+            </p>
+            <p>
+                The quiz webpage has been redesigned to include further learning resources
+                that allow users to learn, watch, and then test themselves all on one page.
+            </p>
+        </section>
+        <!-- Added quiz image -->
+        <section class="card">
+            <h2>Solar System Poster</h2>
+            <p>
+                This picture represents all eight planets in our Solar System. This is 
+                supplementary information that can be learned from the quiz page and helps in relating the questions to the topic of the website.
+            </p>
+            <img src="media/How-Many-Planets-Are-There.png" alt="Poster showing the eight planets of the Solar System" class="extra-image">
+        </section>
+
+        <!-- Added quiz video -->
+        <section class="card">
+            <h2>Space Quiz Video</h2>
+            <p>
+                This extra video gives more information about space and makes the quiz page more engaging.
+            </p>
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/LkkCPGXGZ10"
+                    title="Space educational video"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Big Planetarium. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
