@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Planetarium | Mars</title>
+
+    <!-- link the CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link the JavaScript file -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Website header -->
+    <header class="site-header">
+        <!-- Main navigation on the left -->
+        <nav class="left-nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mars.html" aria-current="page">Mars</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+
+        <!-- Logo and site title centered in the header -->
+        <div class="brand centered-brand">
+            <img src="media/logo.png" alt="Big Planetarium logo" class="logo">
+            <div>
+                <h1>Big Planetarium</h1>
+            </div>
+        </div>
+
+        
+        <div class="header-spacer" aria-hidden="true"></div>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content">
+        <!-- Main Mars section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Exploring Mars</h2>
+                <p>
+                    Mars is known to be located in the fourth position from the Sun and is called the Red Planet because
+                    of the rust found on its surface. This planet is one of the most fascinating objects within the Solar System,
+                    and the well-developed theory states that Mars could have water in the past.
+                </p>
+                <p>
+                    Several space exploration programs were sent to Mars in order to explore its geology,
+                    weather conditions, atmosphere, etc. Space rovers Curiosity and Perseverance helped in
+                    gaining some insights regarding the possible life conditions on the planet.
+                </p>
+                <p>
+                   Furthermore, Mars plays an important role in the future explorations, being one of the main goals.
+                </p>
+            </div>
+
+            <div class="hero-image-box">
+                <img src="media/mars.jpg" alt="Close view of the surface of Mars" class="main-image mars-image">
+            </div>
+        </section>
+
+        <!-- Fact section -->
+        <section class="card">
+            <h2>Fast Facts About Mars</h2>
+            <p>
+                Click the button to reveal a Mars fact. This demonstrates JavaScript by changing the
+                content of the page when the user interacts with a button.
+            </p>
+            <div class="button-row">
+                <button id="mars-fact-button" type="button">Reveal Mars Fact</button>
+                <button id="mars-reset-button" type="button">Reset Fact</button>
+            </div>
+            <p id="fact-text">A Mars fact will appear here.</p>
+        </section>
+
+        <!-- Mission section -->
+        <section class="card">
+            <h2>Would You Visit Mars?</h2>
+            <p>
+                Use the form below to choose how interested you are in Mars exploration. When you submit
+                the form, JavaScript will display a custom message.
+            </p>
+
+            <form id="mission-form">
+                <label for="interest-level">Choose your interest level:</label>
+                <select id="interest-level" name="interest-level">
+                    <option value="">Select an option</option>
+                    <option value="curious">Curious observer</option>
+                    <option value="enthusiastic">Very enthusiastic</option>
+                    <option value="astronaut">Ready to go to Mars</option>
+                </select>
+
+                <label for="mission-reason">Why are you interested in Mars?</label>
+                <textarea id="mission-reason" name="mission-reason" rows="5" placeholder="Write your reason here"></textarea>
+
+                <button type="submit">Submit Response</button>
+            </form>
+
+            <p id="mission-feedback">Your custom response will appear here.</p>
+        </section>
+
+        
+        <section class="card">
+            <h2>Why Mars Matters</h2>
+            <p>
+                The study of Mars facilitates comparison between our planet and others,
+                and allows us to better understand planetary climates, the presence of water
+                in our Solar System, and the challenges posed by human space travel.
+            </p>
+            <p>
+                In light of its proximity to Earth in relation to other planets,
+                Mars is a feasible destination for future human space flights.
+            </p>
+            <img src="media/mars planet.jpg" alt="Illustration of the planet Mars in space" class="extra-image small-extra-image">
+        </section>
+        
+        <section class="card">
+            <h2>Inside Planet Mars</h2>
+            <p>
+                This additional picture gives more information about the inside of Mars,
+                including its atmosphere, surface, crust, mantle, and core. Adding this picture
+                will improve the content on this page and aid in discussing the Mars segment of the evaluation.
+            </p>
+            <img src="media/mars info.jpg" alt="Informational diagram showing inside planet Mars and its internal layers" class="extra-image">
+        </section>
+
+        <!-- Mars video section -->
+        <section class="card">
+            <h2>Mars Video</h2>
+            <p>
+                This embedded YouTube video supports the written information on the page and adds rich
+                media.
+            </p>
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/b2P_CVOd5G0"
+                    title="Mars educational video"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Big Planetarium. All rights reserved.</p>
+    </footer>
+
+   
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Planetarium | Home</title>
+
+    <!-- link the CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link the JavaScript file -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Skip link helps keyboard users jump to the main content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Website header -->
+    <header class="site-header">
+        <!-- Main navigation on the left -->
+        <nav class="left-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="mars.html">Mars</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+
+        <!-- Logo and site title centered in the header -->
+        <div class="brand centered-brand">
+            <img src="media/logo.png" alt="Big Planetarium logo" class="logo">
+            <div>
+                <h1>Big Planetarium</h1>
+            </div>
+        </div>
+
+       
+        <div class="header-spacer" aria-hidden="true"></div>
+    </header>
+
+    <!-- Main content starts here -->
+    <main id="main-content">
+        <!-- Intro section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h2>The Milky Way Galaxy</h2>
+                <p>
+                    Welcome to Big Planetarium. This website was created to teach visitors about space
+                    in a simple and interactive way. The home page introduces the Milky Way, which is
+                    the galaxy that contains our Solar System, planets, stars, dust, and gas.
+                </p>
+                <p>
+                    The Milky Way is a huge spiral galaxy made up of billions of stars. From Earth,
+                    it can sometimes be seen as a pale band of light stretching across the night sky.
+                    Scientists use telescopes, satellites, and space missions to learn more about it.
+                </p>
+                <p>
+                    This website also includes accessibility features and interactive tools so users
+                    can explore the content in a way that suits them best.
+                </p>
+            </div>
+
+            <div class="hero-image-box">
+                <img src="media/milky-way.jpg" alt="Wide view representing the Milky Way galaxy" class="main-image">
+            </div>
+        </section>
+
+        <!-- Buttons for accessibility -->
+        <section class="card">
+            <h2>Accessibility Options</h2>
+            <p>
+                These control features make the site easier to read. The high contrast setting makes
+                changes to the colors in order to make the
+                text stand out more, and the large text mode increases the font size.
+            </p>
+            <div class="button-row">
+                <button id="contrast-toggle" type="button">Toggle High Contrast</button>
+                <button id="text-toggle" type="button">Toggle Large Text</button>
+            </div>
+        </section>
+
+        <!-- Interactive fact section -->
+        <section class="card">
+            <h2>Milky Way Fact Generator</h2>
+            <p>
+                Click the button below to display a random fact about the Milky Way. This adds a simple
+                JavaScript interaction to the page.
+            </p>
+            <button id="home-fact-button" type="button">Show Galaxy Fact</button>
+            <p id="home-fact-text">A galaxy fact will appear here.</p>
+        </section>
+
+        <!-- Video section -->
+        <section class="card">
+            <h2>Educational Video</h2>
+            <p>
+                This embedded video gives a short introduction to the Milky Way and supports the written
+                content on the page with multimedia.
+            </p>
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/msFfjicbBIM"
+                    title="Introduction to the Milky Way Galaxy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        
+        <section class="card">
+            <h2>Why Learn About Space?</h2>
+            <p>
+                An appreciation of space allows us to better understand where humanity stands in the cosmos
+                and may motivate future scientists, engineers, and adventurers. Websites such as these provide
+                an opportunity for individuals to learn about scientific subjects through text, video, images, and interactivity.
+            </p>
+            <p>
+                On the next page, you can explore Mars and discover why it is one of the most studied planets
+                in our Solar System.
+            </p>
+        </section>
+        
+        <section class="card">
+            <h2>Galaxy Image</h2>
+            <p>
+                This additional galaxy image gives the homepage more visual content and makes the design feel
+                more complete. It also supports the topic of the Milky Way and wider space study.
+            </p>
+            <img src="media/milky.jpg" alt="Bright spiral galaxy in space" class="extra-image">
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Big Planetarium. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
